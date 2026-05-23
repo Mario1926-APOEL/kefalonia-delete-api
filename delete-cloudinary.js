@@ -26,3 +26,18 @@ module.exports = async function handler(req, res) {
     return res.status(500).json({ error: err.message });
   }
 };
+{
+  "name": "kefalonia-delete-api",
+  "version": "1.0.0",
+  "dependencies": {
+    "cloudinary": "^1.41.0"
+  }
+}
+{
+  "functions": {
+    "api/delete-cloudinary.js": {
+      "memory": 128,
+      "maxDuration": 10
+    }
+  }
+}
